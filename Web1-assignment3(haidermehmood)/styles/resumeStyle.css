@@ -1,0 +1,75 @@
+a img {
+    height: 80px;
+}
+
+a:hover img {
+    height: 5.4em;
+    filter: brightness(25%) saturate(300%) invert(17%) sepia(40%) saturate(6000%) hue-rotate(-15deg) brightness(90%) contrast(100%);
+}
+
+.info {
+    margin-top: 0px;
+}
+
+.res {
+    margin-bottom: 50px;
+}
+
+
+.head {
+    margin-top: 50px;
+}
+
+.carousel-list {
+    width: 60%;                
+    margin: 20px auto;
+    padding: 10px 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 25px;
+    scrollbar-width: none; 
+    list-style: none;
+}
+
+.carousel-list .item {
+    min-width: 90%;           
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255,255,255,0.15);
+}
+
+.carousel-list .item .done:hover {
+    color: rgb(101, 255, 101);
+}
+
+.carousel-list .item .none:hover {
+    color: rgb(255, 41, 41);
+}
+
+#bottle img{
+    margin-top: 50px;
+}
+
+a #mru {
+    height: 65px;
+}
+
+a:hover #mru {
+    height: 4.3em;
+    filter: brightness(25%) saturate(300%) invert(17%) sepia(40%) saturate(6000%) hue-rotate(-15deg) brightness(90%) contrast(100%);
+}
+
+a #cert {
+    height: 85px;
+    margin-top: 50px;
+}
+
+a:hover #cert {
+    height: 5.6em;
+    filter: brightness(25%) saturate(300%) invert(17%) sepia(40%) saturate(6000%) hue-rotate(-15deg) brightness(90%) contrast(100%);
+}

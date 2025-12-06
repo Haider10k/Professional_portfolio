@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Haider Mehmood">
+        <meta name="description" content="Haider's Personal Portfolio">
+        <meta name="keywords" content="HTML, CSS, Portfolio">
+        <title>Haider Mehmood | Contact</title>
+
+        <!-- Font imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    
+        <!-- Style sheet imports -->
+        <link href="../styles/globalStyle.css" rel="stylesheet">
+        <link href="../styles/webStyle.css" rel="stylesheet">
+    </head>
+
+    <body id="top">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="../images/logo.png" alt="Haider Mehmood Logo">
+            </div>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="../index.html">Home</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html#hero">Hero</a></li>
+                            <li><a href="../index.html#about">About Me</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contact.html" title="Contact">Contact</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html#contact">Info</a></li>
+                            <li><a href="contact.html#form">Form</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a title="rstimepieces" href="web.html">Rstimepieces</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#what">Description</a></li>
+                            <li><a href="#tools">Tools</a></li>
+                            <li><a href="#dev">Process</a></li>
+                            <li><a href="#gal">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a title="Portfolio" href="portfolio.html">Portfolio</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio.html#what">Description</a></li>
+                            <li><a href="portfolio.html#tools">Tools</a></li>
+                            <li><a href="portfolio.html#dev">Process</a></li>
+                            <li><a href="portfolio.html#gal">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a title="Validation" href="python.html">Validation</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="python.html#what">Description</a></li>
+                            <li><a href="python.html#tools">Tools</a></li>
+                            <li><a href="python.html#dev">Process</a></li>
+                            <li><a href="python.html#gal">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a title="resume" href="resume.html">Resume</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="resume.html#intro">Resume</a></li>
+                            <li><a href="resume.html#skill">Skills</a></li>
+                            <li><a href="resume.html#work">Experience</a></li>
+                            <li><a href="resume.html#education">Education</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Main -->
+        <main>
+            <section id="what">
+                <h1 id="des">Rstimepieces Website Development</h1>
+                <h2>What is it?</h2>
+                <p>
+                This project was a website I had built and designed for my custom Seiko 
+                modding business, rsimepieces. Designed to showcase the 
+                brand and provide an easy way for customers to connect. The homepage 
+                includes an About Us section and quick contact links, giving visitors an 
+                introduction to the business and its purpose. The gallery page
+                displays four different watch styles, each with a table 
+                outlining their specifications and components. The site also 
+                includes a dedicated contact page with additional information 
+                and a full contact form where customers can submit inquiries and 
+                communicate the details of their desired timepieces.
+                </p>
+            </section>
+
+            <section id="tools">
+                <h2 class="head">Tools used</h2>
+                <div class="icons">
+                    <figure>
+                    <a><img id="html" src="../images/html5.png" alt="HTML5 logo"></a>
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+                <p class="info">
+                HTML was used to build the entire structure of the website, including the header, navigation bar, content sections, gallery layout, and contact form.
+                It provided the framework for:
+                </p>
+                <ul class="list carousel-list">
+                    <li class="item">About Us section</li>
+                    <li class="item">Product gallery</li>
+                    <li class="item">Watch specification table</li>
+                    <li class="item">Internal page linking and navigation</li>
+                    <li class="item">Contact form structure</li>
+                </ul>
+                <p class="caption">Scroll Left to see more!</p>
+                <p>
+                HTML allowed the site to remain clean, semantic, and easy to navigate, which is especially important for a product-focused business website
+                </p>
+                    <figure>
+                    <a><img id="css" src="../images/css.png" alt="CSS3 logo"></a>
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                <p class="info">
+                CSS was used to define the visual identity and layout of the site, giving RSTimepieces a modern and professional appearance that reflects the branding of my business
+                </p>
+                <ul class="list carousel-list">
+                    <li class="item">Flexbox for consistent alignment</li>
+                    <li class="item">Spacing and structure images and content</li>
+                    <li class="item">Grid layout for the watch gallery</li>
+                    <li class="item">Responsive adjustments to improve readability and usability</li>
+                    <li class="item">Hover animations for links, icons, and interactive elements</li>
+                    <li class="item">Media queries for different devices, ensuring universal usage</li>
+                </ul>
+                <p class="caption">Scroll Left to see more!</p>
+                </div>
+            </section>
+
+            <section id="dev">
+                <h2>Development Process</h2>
+                <p>I began the project by creating wireframes to map the structure and layout of the website, using them as a blueprint to guide the overall design. Once the framework was clear, I built each page step-by-step and applied styling gradually, separating global styles from page-specific styles to reduce repeated code and keep the project organized</p>
+                <h2 class="head">Obstacles Encountered</h2>
+                <p>The website originally worked only on desktop screens, and several elements broke or shifted on smaller devices. Fixed sizes caused sections to overlap or misalign on tablets and phones, revealing the need for improved responsiveness and better use of media queries</p>
+                <h2 class="head">How it was Solved</h2>
+                <p>I implemented responsive media queries for desktop, tablet, and mobile sizes, adjusting layout, text, and image behaviour so the website could be accessed and viewed properly on any device</p>
+            </section>
+
+            <section id="gal">
+                <h2 class="head">Project Gallery</h2>
+                <p>You can explore the full website directly through the link provided, or browse the images below to view its layout, page designs, and overall file structure. These screenshots highlight how the site is organized and how each component works together to form the final product</p>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="../images/structure.png" alt="Screenshot 1">
+                        <img src="../images/rstimpieces.png" alt="Screenshot 2">
+                    </div>
+                    <p>Scroll Left to see more!</p>
+                </div>
+                <a class="git" href="https://haider10k.github.io/web1_assignment2-haider-deems-/" target="_blank">Website</a>
+                <a class="git" href="https://github.com/Haider10k/web1_assignment2-haider-deems-?tab=readme-ov-file" target="_blank">Github</a>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Haider Mehmood</p>
+            <p><a href="#top">Back to the Top</a></p>
+            <p>Personal Portfolio</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,85 @@
+/* Contact section */
+.icons {
+    display: inline;
+}
+
+#emailing, #linked {
+    margin-top: 30px;
+    height: 75px;
+    padding: 0 20px;
+}
+
+.contact #emailing:hover, .contact #linked:hover {
+    height: 5.1em;
+    filter: brightness(25%) saturate(300%) invert(17%) sepia(40%) saturate(6000%) hue-rotate(-15deg) brightness(90%) contrast(100%);
+}
+
+/* Contact form */
+form {
+    color: white;
+    width: 70%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid white;
+    background-color: rgba(78, 78, 78, 0.2);
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: linear-gradient(-100deg, rgb(99, 99, 99), rgb(40, 40, 40));
+}
+
+dl {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+dd {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="submit"], input[type="reset"] {
+    height: 50px;       
+    font-size: 0.7em;          
+    padding: 12px 15px;           
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 1px solid white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: -30px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: red;
+    box-shadow: 0 0 10px rgb(232, 52, 52);
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type="submit"], input[type="reset"] {
+    margin-left: 0;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    background: linear-gradient(-100deg, rgb(103, 103, 103), rgb(40, 40, 40));
+}

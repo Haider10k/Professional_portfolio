@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Haider Mehmood">
+        <meta name="description" content="Haider's Personal Portfolio">
+        <meta name="keywords" content="HTML, CSS, Portfolio">
+        <title>Haider Mehmood | Contact</title>
+
+        <!-- Font imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    
+        <!-- Style sheet imports -->
+        <link href="../styles/globalStyle.css" rel="stylesheet">
+        <link href="../styles/pythonStyle.css" rel="stylesheet">
+    </head>
+
+    <body id="top">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="../images/logo.png" alt="Haider Mehmood Logo">
+            </div>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="../index.html">Home</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html#hero">Hero</a></li>
+                            <li><a href="../index.html#about">About Me</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contact.html" title="Contact">Contact</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html#contact">Info</a></li>
+                            <li><a href="contact.html#form">Form</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a title="rstimepieces" href="web.html">Rstimepieces</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="web.html#what">Description</a></li>
+                            <li><a href="web.html#tools">Tools</a></li>
+                            <li><a href="web.html#dev">Process</a></li>
+                            <li><a href="web.html#gal">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a title="Portfolio" href="portfolio.html">Portfolio</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio.html#what">Description</a></li>
+                            <li><a href="portfolio.html#tools">Tools</a></li>
+                            <li><a href="portfolio.html#dev">Process</a></li>
+                            <li><a href="portfolio.html#gal">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a title="Validation" href="python.html">Validation</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#what">Description</a></li>
+                            <li><a href="#tools">Tools</a></li>
+                            <li><a href="#dev">Process</a></li>
+                            <li><a href="#gal">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a title="resume" href="resume.html">Resume</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="resume.html#intro">Resume</a></li>
+                            <li><a href="resume.html#skill">Skills</a></li>
+                            <li><a href="resume.html#work">Experience</a></li>
+                            <li><a href="resume.html#education">Education</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Main -->
+        <main>
+            <section id="what">
+                <h1>User Validation Program</h1>
+                <h2>What is it?</h2>
+                <p>This project is a Python-based validation program designed to control access to a system by checking both the username and IP address of a user. The program compares each login attempt against two external files: one containing a list of denied users and another containing denied IP addresses. If either the username or IP address appears in the restricted lists, the program displays a message in the terminal denying access. If both checks pass, the user is granted access and their information: username and IP address is recorded in a separate file for approved entries</p>
+            </section>
+
+            <section id="tools">
+                <h2 class="head">Tools used</h2>
+                <div class="icons">
+                    <figure>
+                    <a><img id="python" src="../images/python.png" alt="Python logo"></a>
+                        <figcaption>PYTHON</figcaption>
+                    </figure>
+                </div>
+                <p class="info">
+                Python was the core language used to build the validation program, handling all logic, comparisons, file operations, and decision-making. It allowed the application to read and process user input, verify credentials against external files, and determine whether access should be granted or denied.
+                </p>
+                <ul class="list carousel-list">
+                    <li class="item">Using conditional logic to approve or deny access</li>
+                    <li class="item">Reading and validating usernames from a denied users file</li>
+                    <li class="item">Comparing IP addresses against a list of blocked IPs</li>
+                    <li class="item">Writing approved user data into a separate output file</li>
+                    <li class="item">Handling program flow through input prompts and printed responses</li>
+                    <li class="item">Ensuring clear feedback messages for accepted or denied access</li>
+                </ul>
+                <p class="caption">Scroll Left to see more!</p>
+            </section>
+
+            <section id="dev">
+                <h2 class="head">Development Process</h2>
+                <p>I developed the program by first creating simple file-reading functions to load usernames and IP addresses from text files. From there, I built the core validation logic, starting with username checks and then expanding it to include IP address verification using the same step-by-step process. Once both checks worked together, the program became a complete access-control system that could approve or deny users based on external data. I plan to continue improving this project by adding a visual interface and introducing different access-level permissions in the future</p>
+                <h2 class="head">Obstacles Encountered</h2>
+                <p>A key challenge in developing this program was separating and correctly interpreting the different data formats stored in the external files. Some entries contained only a username, while others included both a username and an IP address, and the program needed to distinguish between the two to avoid incorrect validation results</p>
+                <h2 class="head">How it was Solved</h2>
+                <p>This required restructuring the logic so that each case: user-only data and user-plus-IP data was processed separately, ensuring that comparisons were accurate and the program executed correctly</p>
+            </section>
+
+            <section id="gal">
+                <h2 class="head">Project Gallery</h2>
+                <p>You can explore the program directly through the Github link provided, or browse the images below to view the file structure, individual functions, and text file formatting</p>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="../images/structure3.png" alt="Screenshot 1">
+                        <img src="../images/logic.png" alt="Screenshot 2">
+                        <img src="../images/user.png" alt="Screenshot 3">
+                        <img src="../images/denied_user.png" alt="Screenshot 4">
+                        <img src="../images/denied_ip.png" alt="Screenshot 5">
+                        <img src="../images/approved.png" alt="Screenshot 6">
+                    </div>
+                    <p>Scroll Left to see more!</p>
+                </div>
+                <!-- make a gitpage and link it here -->
+                <a id="git" href="" target="_blank">GitHub Page</a>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Haider Mehmood</p>
+            <p><a href="#top">Back to the Top</a></p>
+            <p>Personal Portfolio</p>
+        </footer>
+
+    </body>
+</html>

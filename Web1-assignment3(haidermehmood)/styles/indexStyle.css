@@ -1,0 +1,69 @@
+/* hero section */
+#hero {
+    position: relative;
+    height: 75vh;
+    width: auto;
+    background-image: url("../images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+}
+
+#hero * {
+    position: relative;
+    z-index: 2;
+}
+
+
+#hero h1 {
+   color: white;
+}
+
+sup {
+    font-size: 0.5em;
+}
+
+/* About section */
+
+#about p {
+    margin-bottom: 40px;
+}
+
+/* Contact section */
+#contact {
+    margin-top: 50px;
+}
+
+.icons {
+    display: inline;
+}
+
+#gmail, #link {
+    height: 75px;
+    padding: 0 20px;
+}
+
+#contact a:hover img{
+    height: 5.1em;
+    filter: brightness(25%) saturate(300%) invert(17%) sepia(40%) saturate(6000%) hue-rotate(-15deg) brightness(90%) contrast(100%);
+}
+
+
+@media (max-width: 590px) {
+    #about {
+        margin-top: 50px;
+    }
+}
